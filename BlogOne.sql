@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 07, 2021 at 11:36 AM
+-- Generation Time: Nov 07, 2021 at 12:17 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -41,9 +41,7 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`sno`, `name`, `email`, `p_no`, `msg`, `date`) VALUES
-(1, 'first', 'test@gmail.com', '12345678890', 'test', '2021-10-23 10:09:50'),
-(13, 'gsr ', 'srg@sve.com', 'sg d', 'sgr dwv', '2021-11-05 10:35:52'),
-(14, 'gsr ', 'srg@sve.com', 'sg d', 'sgr dwv', '2021-11-05 10:36:33');
+(1, 'first', 'test@gmail.com', '12345678890', 'test', '2021-10-23 10:09:50');
 
 -- --------------------------------------------------------
 
