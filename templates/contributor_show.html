@@ -1,7 +1,7 @@
 {% extends "dashboard_layout.html" %}
 {% block body %}
 <!-- Page Header-->
-{% set fname='assets/img/login.svg' %}
+{% set fname='assets/img/Admin.jpeg' %}
 <header class="masthead" style="background-image: url('{{url_for('static',filename=fname)}}')">
     <div class="container position-relative px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -10,7 +10,7 @@
                     <h1>{{post.title}}</h1>
                     <span class="meta">
                         Posted by
-                        <a href="#!">{{ post.author }}</a>
+                        <a href="#!">{{ post.name }}</a>
                         on {{post.date}}
                     </span>
                 </div>
