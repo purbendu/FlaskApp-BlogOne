@@ -207,12 +207,12 @@ def contribute():
 
         db.session.add(entry)
         db.session.commit()
-        '''mail.send_message(
+        mail.send_message(
             'New contribution from '+ name,
             sender=email,
             recipients=[params['gmail-user']],
             body="Title: "+title+"\n"+ "Content: "+content
-        )'''
+        )
     return render_template("contribute.html",params=params)
 
 @app.route("/contributor_posts_show", methods=['GET', 'POST'])
@@ -245,7 +245,7 @@ def contributor_edit(sno):
 
 @app.route("/contributor_show/<string:sno>",methods=['GET'])
 def contributor_show(sno):
-    post=Contribute.query.filter_by(sno=sno).first()#Posts is class name
+    post=Contribute.query.filter_by(sno=sno).first()#Contribute is class name
     return render_template("contributor_show.html",params=params,post=post)
 
 
