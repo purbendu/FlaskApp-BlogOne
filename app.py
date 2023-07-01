@@ -13,6 +13,8 @@ with open('templates/config.json', 'r') as c:
     params = json.load(c)['params']
 
 # local_server=True
+local_server=False
+
 app = Flask(__name__)
 app.config.update(
     MAIL_SERVER = 'smtp.gmail.com',
